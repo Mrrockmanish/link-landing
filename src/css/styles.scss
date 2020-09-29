@@ -209,7 +209,7 @@ section:not(.promo) {
             height: s(458);
             width: s(483);
             left: 1rem;
-            bottom: 35px;
+            bottom: s(35);
 
         }
     }
@@ -440,7 +440,7 @@ h2  {
 }
 
 .job {
-    padding-top: 47px;
+    padding-top: s(47);
     padding-bottom: s(85);
 
     @media (min-width: 768px) {
@@ -528,7 +528,7 @@ h2  {
     }
 
     &__director-desc {
-        margin-top: 5px;
+        margin-top: s(5);
     }
     
     &__desc {
@@ -691,7 +691,7 @@ h2  {
     }
 
     &__desc {
-        margin-top: 17px;
+        margin-top: s(17);
         line-height: 1.86;
 
         @media (min-width: 768px) {
@@ -719,30 +719,30 @@ h2  {
     }
 
     &__credit-inner {
-        padding: 17px 12px;
+        padding: s(17) s(12);
         
         @media (min-width: 768px) {
-            padding: 40px 32px;
+            padding: s(40) s(32);
         }
     }
 
     &__banks {
-        margin-top: 21px;
+        margin-top: s(21);
         
         @media (min-width: 768px) {
-            margin-top: 40px;
+            margin-top: s(40);
         }
     }
 
     &__list {
-        margin-top: 20px;
+        margin-top: s(20);
         @media (min-width: 768px) {
-            margin-top: 30px;
+            margin-top: s(30);
         }
     }
 
     .decorated-li {
-        margin-top: 10px;
+        margin-top: s(10);
         
         @media (min-width: 768px) {
             margin-top: s(28);
@@ -759,11 +759,11 @@ h2  {
     &__companies-title {
         font-size: s(22);
         font-weight: bold;
-        margin-top: 38px;
+        margin-top: s(38);
 
         @media (min-width: 768px) {
             font-size: s(28);
-            margin-top: 74px;
+            margin-top: s(74);
         }
     }
 
@@ -773,17 +773,17 @@ h2  {
 
     table {
         width: 44.125rem;
-        margin-top: 12px;
+        margin-top: s(12);
         
         @media (min-width: 768px) {
             width: s(1170);
-            margin-top: 45px;
+            margin-top: s(45);
         }
         
         td {
             padding: s(16);
-            width: 141px;
-            height: 82px;
+            width: s(141);
+            height: s(82);
             text-align: center;
             vertical-align: center;
             background-repeat: no-repeat;
@@ -792,8 +792,8 @@ h2  {
             transition: .3s;
             
             @media (min-width: 768px) {
-                width: 237px;
-                height: 138px;
+                width: s(237);
+                height: s(138);
             }
 
             &:hover {
@@ -1140,8 +1140,8 @@ h2  {
     margin-top: s(70);
 
     @media (min-width: 768px) {
-        margin-top: 96px;
-        padding-bottom: 122px;
+        margin-top: s(96);
+        padding-bottom: s(122);
     }
 
     &__items {
@@ -1158,8 +1158,8 @@ h2  {
     }
 
     &__circle {
-        bottom: -95px;
-        left: -120px;
+        bottom: - s(95);
+        left: - s(120);
     }
 
 }
@@ -1339,24 +1339,20 @@ h2  {
 }
 
 .questions {
-    padding-top: 90px;
-
-    @media (min-width: 768px) {
-        padding-top: 90px;
-    }
+    padding-top: s(90);
 
     &__list {
-        margin-top: 16px;
+        margin-top: s(16);
     }
 }
 
 .footer {
-    margin-top: 60px;
-    padding-top: 34px;
-    padding-bottom: 16px;
+    margin-top: s(60);
+    padding-top: s(34);
+    padding-bottom: s(16);
 
     @media (min-width: 768px) {
-        margin-top: 110px;
+        margin-top: s(110);
     }
 
     .logo svg {
@@ -1368,7 +1364,7 @@ h2  {
     }
 
     .white-button {
-        margin-top: 34px;
+        margin-top: s(34);
         @media (min-width: 768px) {
             margin-top: 0;
         }
@@ -1376,7 +1372,7 @@ h2  {
 
     .first__phone-sm {
         font-size: s(22);
-        margin-top: 27px;
+        margin-top: s(27);
 
     }
 
@@ -1386,5 +1382,5 @@ h2  {
 }
 
 .copyright {
-    margin-top: 45px;
+    margin-top: s(45);
 }
