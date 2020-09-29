@@ -192,3 +192,28 @@ $gray: #C4C4C4;
   }
 
 }
+
+#form-modal {
+  @media (min-width: 576px) {
+    max-width: s(400);
+  }
+}
+
+.form-modal {
+  &__title {
+    font-size: s(22);
+
+    @media (min-width: 576px) {
+      font-size: s(28);
+    }
+  }
+
+  &__close {
+    right: 15px;
+  }
+
+}
+
+.arcticmodal-container_i2 {
+  padding: s(16)!important;
+}

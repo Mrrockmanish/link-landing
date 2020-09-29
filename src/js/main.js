@@ -21,12 +21,33 @@ $(document).ready(function () {
   });
 
 
+  // заказ обратного звонко
+  $('.call').on('click', function () {
+    $('#form-modal').arcticmodal();
+  });
+
+  // вывод ошибки формы
+  const displayFormError = () => {
+    $('#error-modal').arcticmodal();
+    setInterval('$(\'#error-modal\').arcticmodal(\'close\')', 3000)
+  };
 
 
+  // Плавная прокрутка
 
+  $(".slideto").on("click", function (event) {
+    //отменяем стандартную обработку нажатия по ссылке
+    event.preventDefault();
 
+    //забираем идентификатор бока с атрибута href
+    const id = $(this).attr('href'),
 
+      //узнаем высоту от начала страницы до блока на который ссылается якорь
+      top = $(id).offset().top;
 
+    //анимируем переход на расстояние - top за 1500 мс
+    $('body,html').animate({ scrollTop: top }, 1500);
+  });
 
 
 

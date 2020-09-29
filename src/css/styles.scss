@@ -75,7 +75,7 @@ section:not(.promo) {
         }
 
         @media (min-width: 768px) {
-            width: s(232);
+            width: auto;
         }
     }
 
@@ -387,14 +387,23 @@ h2  {
 
 .who {
     margin-top: - s(18);
+    padding-bottom: s(52);
 
     @media (min-width: 768px) {
         margin-top: s(80);
+        padding-bottom: s(103);
     }
 
     @media (min-width: 1200px) {
         margin-top: s(160);
     }
+
+    &__circle {
+        right: s(16);
+        top: s(168);
+        transform: translateX(50%);
+    }
+
 }
 
 .who-item {
@@ -431,15 +440,23 @@ h2  {
 }
 
 .job {
-    margin-top: 52px;
     padding-top: 47px;
     padding-bottom: s(85);
 
     @media (min-width: 768px) {
-        margin-top: 103px;
         padding-top: s(90);
     }
 
+
+    &__dots {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%) translateY(85%);
+        
+        @media (min-width: 768px) {
+            transform: translateX(-50%) translateY(83%);
+        }
+    }
 
     &__ul {
         max-width: s(404);
@@ -869,6 +886,7 @@ h2  {
 
 .input {
     padding-bottom: s(3);
+    background: transparent;
 }
 
 .how {
@@ -1050,7 +1068,7 @@ h2  {
         margin-top: s(37);
 
         @media (min-width: 768px) {
-            margin-top: s(24);
+            margin-top: 1.8rem;
         }
     }
 
