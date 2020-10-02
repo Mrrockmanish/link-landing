@@ -26,6 +26,12 @@ body {
     word-wrap: break-word;
     line-height: 1.13;
     background-color: #F7F5F2;
+
+    padding-top: s(48);
+
+    @media (min-width: 768px) {
+        padding-top: s(78);
+    }
 }
 
 .container {
@@ -89,16 +95,35 @@ section:not(.promo) {
 }
 
 .header {
-    margin-left: - s(15);
-    margin-right: - s(15);
-    padding: s(6) s(15) s(9);
     background-color: $dark;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    top: 0;
+    left: 0;
 
     @media (min-width: 768px) {
-        padding: s(15) 0 s(18);
-        background-color: transparent;
-        margin-left: auto;
-        margin-right: auto;
+        background-color: #F7F5F2;
+    }
+
+    &__inner {
+        padding: s(6) s(15) s(9);
+        margin-left: - s(15);
+        margin-right: - s(15);
+
+        @media (min-width: 768px) {
+            padding: s(15) 0 s(18);
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+
+
+    &__gray-block {
+        width: s(817);
+        right: -22.375rem;
+        background-color: $dark;
     }
 }
 

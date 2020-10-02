@@ -3,9 +3,10 @@
 //= templates/head.html
 <body class="relative">
 //= templates/modal-form.html
-<section class="first overflow-hidden">
-    <div class="container h-full relative">
-        <div class="header flex items-center md:items-start relative z-20 md:py-4">
+<header class="header flex items-center md:items-start z-20 overflow-hidden">
+    <div class="container relative">
+        <div class="header__gray-block hidden md:block h-full absolute z-10 overflow-hidden"></div>
+        <div class="header__inner flex relative z-20">
             <a href="/" class="logo items-start hover:opacity-75">
                 <svg class="relative" width="211" height="31" viewBox="0 0 211 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path class="logo__letters"
@@ -39,6 +40,11 @@
                 </defs>
             </svg>
         </div>
+    </div>
+</header>
+<section class="first overflow-hidden">
+    <div class="container h-full relative">
+
         <div class="first__right-gray-block absolute"></div>
         <div class="first__img relative md:absolute z-30" style="background-image: url(img/elements/first.png);"></div>
         <div class="first__title-block bg-dark relative md:absolute z-30">
@@ -264,8 +270,9 @@
                 </ul>
             </div>
             <div class="w-full lg:w-7/12">
-                <div class="job__notebook flex justify-center items-center w-full">
-                    <div class="micro">
+                <div class="job__notebook flex justify-center items-center relative w-full">
+                    <!--                    <img src="img/elements/notebook.png" class="absolute z-20">-->
+                    <div class="micro relative z-10">
                         <div class="micro__top bg-white flex flex-grow flex-col">
                             <div class="flex justify-between">
                                 <div class="flex items-center">
